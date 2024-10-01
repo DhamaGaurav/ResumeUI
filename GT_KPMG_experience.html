@@ -1,0 +1,71 @@
+<html style="height: fit-content;">
+    <body style="height: fit-content;">
+        <div class="centered" style="color: black; font-family: 'Calibri'; padding-left: 5; font-size: 13px; margin-top: 0; height: fit-content;">
+            <section>
+                <h1 style="font-size: 25px;">Experience</h1>
+<!-------------------Grant Thornton Experience------------------->
+                <h2 style="margin: 0;">Grant Thornton INDUS</h2>
+                <h4 style="margin: 0;">2 years</h4>
+                <br>
+<!-------------------GT - Senior Consultant------------------->
+                <h3 style="margin: 0;">Senior Consultant</h3>
+                <h4 id="current_job_duration" style="margin: 0;">August 2023 - Present</h4>
+                <p>
+                    • Leading projects for audit automation, with potential savings of 1400 hours.
+                    <br>• Trainer for Power Apps, Power Automate, VBA, Advance Excel and Alteryx.
+                    <br>• Enhanced the user experience for Alteryx users by developing a new UI in PowerApps. Users can run the Alteryx Workflow right from the teams chat.
+                    <br>• Identified potential problem with accessing sub sites in SharePoint anddeveloped a python code to take care of the same. It can seamlessly work withparent or child site.
+                    <br>• Developing Dash app (python).
+                </p>
+<!-------------------GT - Consultant------------------->
+                <h3 style="margin: 0;">Consultant</h3>
+                <h4 id="current_job_duration" style="margin: 0;">October 2022 - August 2023 (11 months)</h4>
+                <p>• Leading projects from design to deployment.
+                    <br>• Redesigning Alteryx Workflow/tools XML to make it dynamic.
+                    <br>• Revolutionised the work papers creation process by cutting down processingtime by 50% and load on Gallery considerably.
+                    <br>• Developed Alteryx Macros that overcome the limitations of inbuilt alteryxtools.- sequential output- automated delimited data handler- excel formula handler- Automated Data stacker (horizontal or vertical) in excel.
+                    <br>• Custom SharePoint Connectors.
+                    <br>• Python integration for dos tasks.
+                    <br>• Building Alteryx API for integration with other technologies.
+                    <br>• Built APIs in Python and hosted on Azure App services.
+                    <br>• Provide training on Excel and VBA.
+                </p>
+<!-------------------KPMG Experience------------------->
+                <h2 style="margin: 0;">KPMG RESOURCE CENTRE PRIVATE LIMITED</h2>
+                <h4 style="margin: 0;">11 months</h4>
+                <br>
+<!-------------------KPMG - Executive------------------->
+                <h3 style="margin: 0;">Executive</h3>
+                <h4 style="margin: 0;">December 2021 - October 2022 (11 months)</h4>
+                <p>• Testing Completeness of JE data with Trial Balance, perform specific criteriatesting.
+                    <br>• Revenue/Sales Analysis• Creating customised Alteryx workflows per client for JE completeness andspecific criteria testing.
+                    <br>• Revolutionised the process of workpaper creation, reducing the manualefforts by 70-80%.
+                    <br>• Leading the initiative to standardise the other processes workflows andworkpapers.
+                    <br>• Conducting trainings within team to upskil and leverage new developmentsfor further usage and developments
+                </p>
+            </section>
+        </div>
+    </body>
+    <script>
+        let joining_date = new Date("2023/08/01")
+        let today_date = new Date()
+        if (today_date.getFullYear()-joining_date.getFullYear() == 0){
+            let period = Math.abs(today_date.getMonth()-joining_date.getMonth()+1) + " Month"
+        } else if(today_date.getFullYear()-joining_date.getFullYear() > 0){
+            if (today_date.getMonth()<joining_date.getMonth()){
+                xmonth = (today_date.getFullYear()-joining_date.getFullYear())*12 + (today_date.getMonth()-joining_date.getMonth())-(today_date.getFullYear()-joining_date.getFullYear()-1)*12 + 1
+                if ((today_date.getFullYear()-joining_date.getFullYear()-1)==0){
+                    xyears = ""
+                }
+                else {
+                    xyears = (today_date.getFullYear()-joining_date.getFullYear()-1) + " year "
+                }
+                period = xyears + xmonth + " month(s)"
+            } else{
+                xmonth = (today_date.getMonth()-joining_date.getMonth()) + 1
+                period = Math.abs(today_date.getFullYear()-joining_date.getFullYear()) + " year " + xmonth + " month(s)"
+            } 
+        }
+        document.getElementById("current_job_duration").innerText = document.getElementById("current_job_duration").innerText + " (" + period + ")"
+    </script>
+</html>

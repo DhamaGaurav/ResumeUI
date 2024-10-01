@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    border: 0;
+    float: initial;
+}
+
+html{
+    min-height: 100%;
+}
+
+@media print{ 
+    body, html, #page-container, .scrollable-page, .ps, .panel {
+        height: 100% !important;
+        width: 100% !important;
+        display: inline-block;
+    }
+}
+
+body{
+    background-color: white;
+    font-family:'Calibri';
+    width: 100%;
+    /* position: fixed;
+    height: 100%; */
+}
+section{
+    width: auto;
+    margin: 5px;
+    padding-top: center;
+    line-height: 25px;
+    overflow-wrap:anywhere ;
+}
+
+.split{
+    /* height: 100%; */
+    /* position: fixed; */
+    overflow-x:auto;
+    overflow-y: visible;
+    overflow-wrap: anywhere;
+    padding-top: 5px;
+}
+
+.left{
+    left: 0;
+    width: 28%;
+    padding-left: 5px;
+    background-color:rgb(79, 45, 127);
+    border-radius: 25px;
+    float:left;
+    height: 90%;
+}
+
+.right{
+    right: 0;
+    width: 70%;
+    padding-left: 5px;
+    background-color: white;
+    /* margin: 0 0 0 ; */
+}
+
+.centered{
+    position: absolute;
+    text-align: left;
+    width: fit-content;
+}
+
+.details{
+    height: 90%;
+    width: 100%;
+    /* position:absolute bottom; */
+    float: initial;
+    margin-bottom: 35px;
+}
+
+.header{
+    height: initial;
+    padding: 5px;
+    /* position: absolute top; */
+}
+

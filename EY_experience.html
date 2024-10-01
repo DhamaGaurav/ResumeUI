@@ -1,0 +1,71 @@
+<html style="height: fit-content;">
+    <body style="height: fit-content;">
+        <div class="centered" style="color: black; font-family: 'Calibri'; padding-left: 5; font-size: 13px; margin-top: 0; height: fit-content;">
+            <section>
+                <h1 style="font-size: 25px;">Experience</h1>
+<!-------------------EY Experience------------------->
+                <h2 style="margin: 0;">EY GDS</h2>
+                <h4 style="margin: 0;">2 years 6 months</h4>
+                <br>
+<!-------------------EY - Advance Analyst------------------->
+                <h3 style="margin: 0;">Advance Analyst</h3>
+                <h4 style="margin: 0;">August 2020 - December 2021 (1 year 5 months)</h4>
+                <p>Collate, data analysis and data validation using following different tools
+                    <br>i.   Power Query, Power Pivot & Power Charts – creating a data link – performchanges/modifications indata model, create relationships and creating the report.
+                    <br>ii.  Alteryx – Creating the workflow to automate the manual process/ creatingworkflow for newclients. Debugging the Alteryx workflow if it fails due to some changes in data & modifying as perrequirement.
+                    <br>iii. VBA – Creating macro workbooks to modify/generate/convert the data. Modifying the VBA codesto accommodate the changes or customizations.
+                    <br>iv.  Data Visualization after the above set processes in Power Bi reports. Publishto the Power Bi serverand share with the required resources and clients.
+                    <br>• Modify the existing Power BI/Alteryx/VBA to customizations as perrequirements.
+                    <br>• Led a team of 13 people for testing the automation process being developedas a part of my innovation idea.
+                    <br>• Created Macro workbooks for xml & csv generation – potential time saving6000 hours annuallyand quality by 99%.
+                    <br>• 3 Bronze and 1 Learning EY Badges• Received annual High contributor tag for both the years.</p>
+<!-------------------EY - Advance Analyst------------------->
+                <h3 style="margin: 0;">Tax Analyst</h3>
+                <h4 style="margin: 0;">July 2019 - August 2020 (1 year 2 months)</h4>
+                <br>
+                <!-- <hr style="border-top: dotted 1px; width: 50%;"> -->
+<!-------------------Clear Tax Experience------------------->
+                <h2 style="margin: 0;">ClearTax India</h2>
+<!-------------------Business Development Associate------------------->
+                <h3 style="margin: 0;">Business Development Associate</h3>
+                <h4 style="margin: 0;">April 2019 - June 2019 (3 months)</h4>
+                <br>
+<!-------------------StarFing Experience------------------->
+                <h2 style="margin: 0;">Starfing</h2>
+<!-------------------Business Development Associate------------------->
+                <h3 style="margin: 0;">Forex Intern</h3>
+                <h4 style="margin: 0;">March 2019 - April 2019 (2 months)</h4>
+                <br>
+<!-------------------EY Experience------------------->
+                <h2 style="margin: 0;">EY GDS</h2>
+<!-------------------Business Development Associate------------------->
+                <h3 style="margin: 0;">Tax Intern</h3>
+                <h4 style="margin: 0;">January 2018 - September 2018 (9 months)</h4>
+                <p>Worked as intern with PAS and Indirect tax team supporting with Analysis andpreparation of client deliverables.I have been intern of the month during both my internship at EY.</p>
+                <br>
+            </section>
+        </div>
+    </body>
+    <script>
+        let joining_date = new Date("2023/08/01")
+        let today_date = new Date()
+        if (today_date.getFullYear()-joining_date.getFullYear() == 0){
+            let period = Math.abs(today_date.getMonth()-joining_date.getMonth()+1) + " Month"
+        } else if(today_date.getFullYear()-joining_date.getFullYear() > 0){
+            if (today_date.getMonth()<joining_date.getMonth()){
+                xmonth = (today_date.getFullYear()-joining_date.getFullYear())*12 + (today_date.getMonth()-joining_date.getMonth())-(today_date.getFullYear()-joining_date.getFullYear()-1)*12 + 1
+                if ((today_date.getFullYear()-joining_date.getFullYear()-1)==0){
+                    xyears = ""
+                }
+                else {
+                    xyears = (today_date.getFullYear()-joining_date.getFullYear()-1) + " year "
+                }
+                period = xyears + xmonth + " month(s)"
+            } else{
+                xmonth = (today_date.getMonth()-joining_date.getMonth()) + 1
+                period = Math.abs(today_date.getFullYear()-joining_date.getFullYear()) + " year " + xmonth + " month(s)"
+            } 
+        }
+        document.getElementById("current_job_duration").innerText = document.getElementById("current_job_duration").innerText + " (" + period + ")"
+    </script>
+</html>
