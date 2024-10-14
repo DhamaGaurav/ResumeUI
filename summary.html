@@ -1,16 +1,20 @@
-<html style="height: fit-content;">
-    <body style="height: fit-content;">
-        <div class="centered" style="color: black; font-family: 'Calibri'; font-size: 13px; margin-bottom: 0;" >
+<html id="summary_html">
+    <body style="margin-bottom: 0px; margin-top: 0px;">
+        <div class="centered" style="color: black; font-family: 'Calibri'; font-size: 13px; margin: 0; overflow-y: hidden;" >
             <section>
-                <h1 style="padding-left: 5;">Summary</h1>
-                <p style="margin: 5">Alteryx Designer Advanced Certified </p>
-                <p style="margin: 5">Experienced in Data Analysis and Data transformation with skills in Alteryx, Postman, Power Apps, Power Automate, Advance Excel, VBA and Power BI.</p>
-                <p style="margin: 5">Expert in Alteryx APIs.</p>
-                <p style="margin: 5">Working experience in Dash, Flask & APIs.</p>
-                <p style="margin: 5">4 innovations in EY (6,000 hours annual saving) and 2 in KPMGsuccessfully developed (estimated - 2,000 hours saving annually with 80% reduction in turn around time).</p>
-                </p>
+                <h1 style="font-size: 25px; margin-top: 0; margin-bottom: 3px;">Summary</h1>
+                <li>Alteryx Designer Advanced Certified </li>
+                <li>Experienced in Data Analysis and Data transformation with skills in Alteryx, SQL, Power Apps, Power Automate, Advance Excel, VBA, PowerBI and Postman.</li>
+                <li>Expert in Alteryx APIs, Alteryx Chained Apps, Alteryx and VBA Macros and Alteryx Power App integrations.</li>
+                <li>Working experience in Dash, Flask, APIs, HTML and CSS</li>
+                <li>4 innovations in EY (6,000 hours annual saving) and 2 in KPMG successfully developed (estimated - 2,000 hours saving annually with 80% reduction in turn around time).</li>
                 <Hr>
             </section>
         </div>
     </body>
+    <script>
+        var summaryhtml = document.getElementById("summary_html")
+        summaryhtml.style.height = summaryhtml.offsetHeight
+        window.parent.postMessage({"xheight": summaryhtml.offsetHeight, "thisvar":"myvar", "frame_id":"iframe_summary"}, "*");
+    </script>
 </html>
