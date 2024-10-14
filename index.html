@@ -6,40 +6,39 @@
         <title>Gaurav Dhama</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="index.css" type="text/css" media="print"/>
+        <script src="script.js" async="true"></script>
     </head>
     <body>
-        <div id="fullbody" class="section" style="padding-bottom: 5px;">
+        <div id="fullbody" class="section" style="padding-bottom: 5px; width: 100%;">
             <div class="header">
                 <H1>Gaurav Dhama</H1>
                 <p>Senior Consultant at GT INDUS | EX-KPMG | EX-EY GDS| Alteryx Designer Advanced Certified</p>
             </div>
             <div class="details">
-                <div id="additional_details" class="split left" style="height: 100%;">
-                   <iframe src="leftpanel.html" frameborder="0" style="height: 100%; width: 100%; font-family: 'Calibri';"></iframe>
+                <div id="additional_details" style="background-color: rgb(79, 45, 127);">
+                   <iframe src="support_pages/leftpanel.html" frameborder="0" style="height: fit-content; width: 100%; font-family: 'Calibri';"></iframe>
                 </div>
-                <div id="main_details" class="split right">
-                    <div style="height: 22%;">
-                        <iframe src="summary.html" frameborder="0" style="height: 100%; width: 100%; font-family: 'Calibri';"></iframe>
+                <div id="main_details" style="height: 100%";>
+                    <div>
+                        <iframe id = "iframe_summary" src="support_pages/summary.html" frameborder="0" style="width: 100%;font-family: 'Calibri'; overflow-y: hidden;margin-top: 2px; margin-bottom: 2px;" ></iframe>
                     </div>
-                    <hr size="2">
-                    <div style="height: 80%;">
-                        <iframe src="GT_KPMG_experience.html" frameborder="0" style="height: 100%; width: 100%; font-family: 'Calibri';"></iframe>
+                    <!-- <hr size="2"> -->
+                    <div>
+                        <iframe id = "Experience_Frame" src="support_pages/GT_KPMG_experience.html" frameborder="0" style="width: 100%; font-family: 'Calibri';"></iframe>
+                    </div>
+                    <div>
+                        <iframe id="education_frame" src="support_pages/education.html" frameborder="0" style="width: 100%; font-family: 'Calibri';"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="details">
-            <!-- <div class="split left">
-                <iframe src="leftpanel_blank.html" frameborder="0" style="height: 95%; width: 100%; font-family: 'Calibri';"></iframe>
-            </div>
-            <div class="split right"> -->
+        <!-- <div class="details" style="padding-bottom: 5px; width: 100%;">
                 <div>
-                    <iframe src="EY_experience.html" frameborder="0" style="height: 75%; width: 100%; font-family: 'Calibri';"></iframe>
+                    <iframe id="Experience_page2" src="support_pages/EY_experience.html" frameborder="0" style="width: 100%; font-family: 'Calibri';"></iframe>
                 </div>
-                <div></div>
-                    <iframe src="education.html" frameborder="0" style="height: 95%; width: 100%; font-family: 'Calibri';"></iframe>
+                <div>
+                    <iframe src="support_pages/education.html" frameborder="0" style="width: 100%; font-family: 'Calibri';"></iframe>
                 </div>
-            <!-- </div>
-        </div> -->
+            </div> -->
     </body>
 </html>
