@@ -1,4 +1,4 @@
-<html style="height: fit-content;">
+<html style="height: fit-content;" id="sub_education_frame">
     <body style="height:fit-content;">
         <div class="centered" style="color: black; font-family: 'Calibri'; padding-left: 5; font-size: 13px; margin-top: 0; height: fit-content;">
             <section>
@@ -7,11 +7,11 @@
                 <h2 style="margin: 0;">Ramaiah Institute Of Technology</h2>
                 <h4 style="margin: 0;">Master of Business Administration - MBA, Finance andmarketing · (2017 - 2019)</h4>
                 <br>
-<!-------------------EY Experience------------------->
+<!-------------------Engineering------------------->
                 <h2 style="margin: 0;">Bangalore Institute Of Technology</h2>
                 <h4 style="margin: 0;">Bachelor of Engineering (B.E.), Mechanical Engineering · (2012 - 2016)</h4>
                 <br>
-<!-------------------EY Experience------------------->
+<!-------------------School------------------->
                 <h2 style="margin: 0;">Kendriya Vidyalaya</h2>
                 <h4 style="margin: 0;">Science · (2011 - 2012)</h4>
                 <!-- <h4 style="margin: 0;">School · (2000 - 2012)</h4> -->
@@ -20,4 +20,9 @@
             </section>
         </div>
     </body>
+    <script>
+        var summaryhtml = document.getElementById("sub_education_frame")
+        summaryhtml.style.height = summaryhtml.offsetHeight
+        window.parent.postMessage({"xheight": summaryhtml.offsetHeight, "thisvar":"myvar", "frame_id":"education_frame"}, "*");
+    </script>
 </html>
