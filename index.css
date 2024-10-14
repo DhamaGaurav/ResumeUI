@@ -19,12 +19,14 @@ html{
 body{
     background-color: white;
     font-family:'Calibri';
-    width: 100%;
+    /* width: 100%; */
+    /* display: flex; */
+    /* overflow: hidden; */
     /* position: fixed;
     height: 100%; */
 }
 section{
-    width: auto;
+    width: 100%;
     margin: 5px;
     padding-top: center;
     line-height: 25px;
@@ -65,11 +67,11 @@ section{
 }
 
 .details{
-    height: 90%;
+    /* height: auto; */
     width: 100%;
     /* position:absolute bottom; */
-    float: initial;
-    margin-bottom: 35px;
+    /* float: initial; */
+    /* margin-bottom: 35px; */
 }
 
 .header{
@@ -78,3 +80,16 @@ section{
     /* position: absolute top; */
 }
 
+iframe{
+    border: 0;
+    --width:100vw;
+    --height:20vh;
+    --scale:0.7;
+
+    /* width: var(--width);
+    height: var(--height); */
+    
+    /* transform: scale(var(--scale)); */;
+    /* margin: calc(-1 * (var(--height) - var(--scale) * var(--height)) / 2)
+            calc(-1 * (var(--width)  - var(--scale) * var(--width))  / 2); */
+}
